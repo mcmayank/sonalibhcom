@@ -3,31 +3,27 @@ import { Button, Heading } from "@medusajs/ui"
 
 const Hero = () => {
   return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
-        <span>
-          <Heading
-            level="h1"
-            className="text-3xl leading-10 text-ui-fg-base font-normal"
-          >
-            Well done! You have successfully deployed your Medusa store on Railway!
-          </Heading>
-          <Heading
-            level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
-          >
-            Need help customizing your store?
-          </Heading>
-        </span>
-        <a
-          href="https://funkyton.com/tutorial-customize-your-medusajs-webshop-storefron/"
-          target="_blank"
-        >
-          <h1 style={{ textDecoration: "underline" }}>
-            Visit the tutorial
-          </h1>
-        </a>
-      </div>
+    <div className="relative h-[75vh] w-full overflow-hidden">
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="https://res.cloudinary.com/learning-central/video/upload/v1719809698/hero-video_o8spwk.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* <div className="absolute inset-0 bg-black bg-opacity-10"></div> */}
+      {/* <div className="relative z-10 flex items-center justify-center h-full">
+        <div className="text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Our Website</h1>
+          <p className="text-xl md:text-2xl mb-8">Discover amazing products and services</p>
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Get Started
+          </button>
+        </div>
+      </div> */}
     </div>
   )
 }

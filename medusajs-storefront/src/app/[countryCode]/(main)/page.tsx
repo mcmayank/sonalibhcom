@@ -8,7 +8,7 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "Sonali Bh",
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }
@@ -17,7 +17,7 @@ const getCollectionsWithProducts = cache(
   async (
     countryCode: string
   ): Promise<ProductCollectionWithPreviews[] | null> => {
-    const { collections } = await getCollectionsList(0, 3)
+    const { collections } = await getCollectionsList(0, 4)
 
     if (!collections) {
       return null
