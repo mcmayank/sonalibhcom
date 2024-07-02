@@ -14,13 +14,12 @@ interface NavItem {
 }
 
 interface Logo {
-  id: string;
   filename: string;
   alt: string;
 }
 
 interface NavProps {
-  logo: Logo[];
+  logo: Logo;
   navItems: NavItem[];
 }
 
